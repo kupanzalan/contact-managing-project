@@ -10,4 +10,4 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The project is deployed to Vercel too: https://contact-managing-project.vercel.app/contact-list
+The project is deployed to Vercel too: https://contact-managing-project-new.vercel.app/contact-list
