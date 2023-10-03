@@ -1,0 +1,653 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'LexendDeca'; /* Choose a name for your custom font */
+  src: url('../public/fonts/LexendDeca-VariableFont_wght.ttf') format('truetype'); /* Font format and path */
+}
+
+@font-face {
+  font-family: 'Glysa';
+  src: url('../public/fonts/Glysa.otf') format('opentype');
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: #FFFFFF;
+  background-color: #141414;
+}
+
+.mainLayout {
+  display: flex;
+  justify-content: center;
+}
+
+/* Left section */
+
+.left-section {
+  width: 25vw;
+  max-width: 25vw;
+  height: 100vh;
+  border-right: 1px solid #282828;
+}
+
+.back {
+  margin-top: 100px;
+  max-height: 80px;
+  height: 80px;
+  /* width: 44px; */
+  border-top: 1px solid #282828;
+  border-bottom: 1px solid #282828;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.backArrowClass {
+  margin-right: 20px;
+}
+.backArrowClass:hover {
+  cursor: pointer;
+}
+
+/* Right section */
+
+.right-section {
+  width: 25vw;
+  max-width: 25vw;
+  height: 100vh;
+  border-left: 1px solid #282828;
+}
+
+.sun {
+  margin-top: 100px;
+  max-height: 80px;
+  height: 80px;
+  border-top: 1px solid #282828;
+  border-bottom: 1px solid #282828;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sunIcon {
+  margin-left: 20px;
+}
+.sunIcon:hover {
+  cursor: pointer;
+}
+
+/* Central section */
+
+.contact-list {
+  text-align: center;
+  width: 50vw;
+  max-width: 50vw;
+  margin-top: 100px;
+}
+
+.contactsHeader {
+  display: flex;
+  justify-content: space-between;
+  min-height: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 1px solid #282828;
+  border-bottom: 1px solid #282828;
+}
+
+h1 {
+  font-family: 'Glysa';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  color: #FFF;
+}
+
+.rightPart {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+}
+
+/* Contact header settings icon */
+
+.settingsIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.settingsIcon:hover {
+  cursor: pointer;
+}
+
+/* Contact header photo icon */
+
+.photoIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photoIcon:hover {
+  cursor: pointer;
+}
+
+/* Contact header Add button */
+
+.addNewButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactButton {
+  border-radius: 1000px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border: 1px solid #3C3C3C;
+  background: linear-gradient(180deg, rgba(40, 40, 40, 0.70) 0%, #282828 100%), #141414;
+
+  font-family: 'LexendDeca';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+  scale: 1;
+}
+.contactButton:hover {
+  border-radius: 1000px;
+  border: 1px solid #3C3C3C;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 100%), linear-gradient(180deg, rgba(40, 40, 40, 0.70) 0%, #282828 100%), #141414;
+  scale: 1.05;
+  transition: scale 0.3s ease;
+}
+
+/* Media query for adjustments */
+@media (max-width: 850px) {
+  /* Left section */
+  .left-section {
+    width: 20vw;
+  }
+
+  /* Right section */
+  .right-section {
+    width: 20vw !important;
+  }
+
+  /* Center */
+  .contact-list {
+    width: 60vw !important;
+    max-width: 60vw !important;
+  }
+}
+
+/* Media query for adjustments */
+@media (max-width: 700px) {
+  /* Left section */
+  .left-section {
+    width: 10vw;
+  }
+
+  .backArrowClass {
+    margin-right: 7px;
+  }
+
+  /* Right section */
+  .right-section {
+    width: 10vw !important;
+  }
+
+  .sunIcon {
+    margin-left: 7px !important;
+  }
+
+  /* Center */
+  .contact-list {
+    width: 80vw !important;
+    max-width: 80vw !important;
+  }
+
+  .addNewButtonText {
+    display: none;
+  }
+  .contactButton {
+    width: 40px;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    padding-left: 6px !important;
+    padding-right: 6px!important;
+  }
+  .rightPart {
+    max-width: 120px;
+  }
+}
+
+/* Media query for adjustments */
+@media (max-width: 330px) {
+  /* Left section */
+  .left-section {
+    width: 0vw;
+  }
+
+  /* Right section */
+  .right-section {
+    width: 0vw !important;
+  }
+
+  /* Center */
+  .contact-list {
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+}
+
+/* Contact list  */
+
+.contact-list-items {
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.contactItem {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Contact list item details */
+
+.contact {
+  display: flex;
+}
+
+.contactDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  height: 40px;
+}
+
+.contactName {
+  font-size: 14px;
+  color: #FFF;
+}
+
+.contactPhone {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.lisItemPhoto {
+  border-radius: 50%;
+  max-height: 40px;
+  max-width: 40px;
+}
+
+/* Action buttons */
+
+.actionButtons {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.contactItem:hover .actionButtons,
+.actionButtons.dropdown-open {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  opacity: 1;
+}
+
+.contactActionIcons {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.contactActionIcons > img {
+  padding: 8px;
+}
+
+.contactActionIcons:hover {
+  cursor: pointer;
+}
+
+.moreIconDropdown {
+  border-radius: 8px;
+  background-color: #232323;
+}
+
+.hideOtherIconsWhenOpen .contactActionIcons {
+  display: none;
+}
+
+/* Modal container */
+
+.modalContainer {
+  width: 340px;
+  height: 540px;
+}
+
+/* Modal stuff */
+
+.modalComponent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  background-color: #141414;
+  color: rgb(0, 0, 0);
+  padding: 24px;
+  width: 364px;
+  height: 540px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+/* media query for dropdown adjustment */
+@media (max-width: 400px) {
+  .modalComponent {
+    width: 300px;
+  }
+}
+
+/* media query for dropdown adjustment */
+@media (max-width: 320px) {
+  .modalComponent {
+    width: 250px;
+    height: 500px;
+  }
+  
+  .addPictureButton {
+    height: 50px !important;
+  }
+  
+  .formInputDivs {
+    margin-top: 15px !important;
+  }
+
+  .buttonsForm {
+    margin-top: 30px !important;
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modalAddPicture {
+  display: flex;
+  margin-top: 24px;
+}
+
+.modalPhoto {
+  border-radius: 50%;
+  max-height: 80px;
+  max-width: 80px;
+  margin-right: 16px;
+}
+
+.addChangeImage {
+  margin-right: 8px;
+}
+
+.addChangeButton {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 16px;
+  height: 40px;
+  background: #282828;
+  color: #FFF;
+
+  font-family: 'LexendDeca';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+}
+
+.deleteButton {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+  padding: 8px;
+  height: 40px;
+  background: #282828;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  font-family: 'LexendDeca';
+  color: rgba(255, 255, 255, 0.56);
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.12px;
+}
+
+.formInput {
+  display: flex;
+  height: 40px;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--grey-g-60, #282828);
+  background: var(--grey-g-80, #1E1E1E);
+  color: #FFF;
+
+  font-family: 'LexendDeca';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.formInput::placeholder {
+  color: rgba(255, 255, 255, 0.32);
+  font-family: 'LexendDeca';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.formInputDivs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.buttonsForm {
+  display: flex;
+  justify-content: right;
+  margin-top: 48px;
+}
+
+.cancelButton {
+  display: flex;
+  height: 40px;
+  padding: 8px 16px;
+  margin-right: 8px;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  border-radius: 8px;
+  color: #FFF;
+}
+
+.submitButton {
+  display: flex;
+  height: 40px;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  border-radius: 8px;
+  background-color: #262626;
+  color: #FFF;
+}
+
+/* Dropdown menu */
+
+.dropdownContainer {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 219px;
+  height: 132px;
+  border-radius: 8px;
+  background-color: #1E1E1E;
+  z-index: 1;
+  color: black;
+}
+
+.dropdownIcons {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.dropdownListItem {
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #FFF;
+  font-family: 'LexendDeca';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+}
+.dropdownListItem:hover {
+  background-color: #232323;
+}
+
+/* media query for dropdown adjustment */
+@media (max-width: 700px) {
+  .dropdownContainer {
+    left: -120% !important;
+    width: 120px !important;
+  }
+}
+
+/* media query for dropdown adjustment */
+@media (max-width: 330px) {
+  .dropdownContainer {
+    left: -210% !important;
+    width: 120px !important;
+  }
+}
+
+.spinnerCenter {
+  position: relative;
+}
+
+.spinnerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploadingImageLoader {
+  color: #FFF;
+  font-family: 'LexendDeca';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loaderData {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 200px;
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 

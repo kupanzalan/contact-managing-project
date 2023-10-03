@@ -1,0 +1,19 @@
+{
+  "addNew": "Add new ", 
+  "edit": "Edit", 
+  "favourite": "Favourite", 
+  "remove": "Remove", 
+  "addContact": "Add contact", 
+  "addPicture": "Add picture", 
+  "changePicture": "Change picture", 
+  "name": "Name", 
+  "phoneNumber": "Phone number", 
+  "emailAdress": "Email adress", 
+  "cancel": "Cancel", 
+  "done": "Done", 
+  "uploadingImage": "Uploading image...", 
+  "contacts": "Contacts", 
+  "jamieWright": "Jamie Wright", 
+  "phoneNumberPlaceholder": "+01 234 5678", 
+  "emailAdressPlaceholder": "jamie.wright@mail.com"
+}

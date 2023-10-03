@@ -1,0 +1,28 @@
+{
+  "name": "ux-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postinstall": "prisma generate",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "aws-sdk": "^2.1468.0",
+    "dotenv": "^16.3.1",
+    "framer-motion": "^10.16.4",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "prisma": "^5.3.1",
+    "tailwindcss": "latest"
+  }
+}
