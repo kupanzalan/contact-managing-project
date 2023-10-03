@@ -84,7 +84,7 @@ const FormModal = ({ onClose, isPictureUpladed, setIsPictureUpladed, formData, s
             <img className="modalPhoto" src={DEFUALT_PICTURE_URL} alt="Nobody" />
           )}
         </div>
-        <div className="addNewButton">
+        <div className="addNewButtonModal">
           {!isPictureUpladed ? (
             <>
               <button className="addChangeButton" onClick={triggerFileUpload}>

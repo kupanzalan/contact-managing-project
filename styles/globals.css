@@ -143,6 +143,12 @@ h1 {
 
 /* Contact header Add button */
 
+.addNewButtonModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .addNewButton {
   display: flex;
   justify-content: center;
@@ -380,7 +386,16 @@ h1 {
 @media (max-width: 320px) {
   .modalComponent {
     width: 250px;
-    height: 500px;
+    height: 560px;
+  }
+
+  .addNewButtonModal {
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .deleteButton {
+    margin-top: 10px;
   }
   
   .addPictureButton {
@@ -443,6 +458,12 @@ h1 {
   letter-spacing: 0.14px;
 }
 
+.addChangeButton:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 100%), linear-gradient(180deg, rgba(40, 40, 40, 0.70) 0%, #282828 100%), #141414;
+  scale: 1.05;
+  transition: scale 0.3s ease;
+}
+
 .deleteButton {
   border-radius: 8px;
   display: flex;
@@ -452,6 +473,12 @@ h1 {
   padding: 8px;
   height: 40px;
   background: #282828;
+}
+
+.deleteButton:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 100%), linear-gradient(180deg, rgba(40, 40, 40, 0.70) 0%, #282828 100%), #141414;
+  scale: 1.05;
+  transition: scale 0.3s ease;
 }
 
 .contactForm {
@@ -522,6 +549,11 @@ h1 {
   color: #FFF;
 }
 
+.cancelButton:hover {
+  scale: 1.05;
+  transition: scale 0.3s ease;
+}
+
 .submitButton {
   display: flex;
   height: 40px;
@@ -532,6 +564,12 @@ h1 {
   border-radius: 8px;
   background-color: #262626;
   color: #FFF;
+}
+
+.submitButton:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 100%), linear-gradient(180deg, rgba(40, 40, 40, 0.70) 0%, #282828 100%), #141414;
+  scale: 1.05;
+  transition: scale 0.3s ease;
 }
 
 /* Dropdown menu */
