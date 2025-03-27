@@ -8,7 +8,7 @@ This is a frontend-focused contact management application that allows users to a
 
 Navigate to the project folder and install the necessary dependencies:
 ```
-cd frontend
+npm install
 ```
 
 ### 2. Run the application with the following command:
