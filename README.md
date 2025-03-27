@@ -4,7 +4,14 @@ This is a frontend-focused contact management application that allows users to a
 
 ## Getting Started
 
-Run the application with the following command:
+### 1. Install Dependencies
+
+Navigate to the project folder and install the necessary dependencies:
+```
+cd frontend
+```
+
+### 2. Run the application with the following command:
 
 ```bash
 npm run dev
